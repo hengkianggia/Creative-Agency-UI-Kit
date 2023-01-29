@@ -31,6 +31,7 @@
             "5persen": "5%",
             "10persen": "10%",
             "15persen": "15%",
+            "18persen": "18%",
             "20persen": "20%",
             "25persen": "25%",
             "30persen": "30%",
@@ -69,30 +70,33 @@
 </head>
 
 <body class="font-poppins">
-  <div class="w-screen h-screen max-w-[2500px] mx-auto">
+  <div class="w-screen max-w-[2500px] mx-auto">
 
-    <nav class="w-full h-14 flex justify-between items-center px-4 mt-5">
-      <h1 class="text-lg p-2 text-white rounded-lg bg-ungu font-bold">PKY</h1>
+    <nav class="w-full h-14 flex justify-between items-center px-5 md:px-12 mt-5">
+      <h1 class="text-lg md:text-xl p-2 text-white rounded-lg bg-ungu font-bold">PKY</h1>
       <div id="menu"
-        class="flex flex-col absolute w-screen h-screen bg-white justify-center items-center gap-y-4 text-2xl font-semibold -top-[7000px] z-10">
+        class="flex flex-col md:flex-row absolute md:relative w-screen h-screen md:h-5 bg-white justify-center md:justify-end items-center gap-y-4 text-2xl md:text-lg md:gap-x-6 font-semibold md:font-light -top-[7000px] md:-top-0 z-10">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Work</a>
-        <a href="#" class="px-3 py-2 rounded-lg bg-primary text-white">Contact Us</a>
+        <a href="#" class="px-3 py-2 rounded-lg bg-ungu md:ml-32 text-white">Contact Us</a>
       </div>
-      <div id="burger" class="w-9 h-7 flex flex-col justify-between z-20">
+      <div id="burger" class="w-9 h-7 md:hidden flex flex-col justify-between z-20">
         <span class="w-full h-[5px] bg-black rounded-sm"></span>
         <span class="w-10/12  h-[5px] bg-black rounded-sm"></span>
         <span class="w-full h-[5px] bg-black rounded-sm"></span>
       </div>
     </nav>
 
-    <section class="px-5 mt-7">
-      <div class="w-full h-[320px] bg-cover bg-center" style="background-image: url(../asset/1.svg);"></div>
-      <div class="w-11/12">
-        <h1 class="text-3xl mb-4 font-semibold">Make your business <span class="text-oren"> more powerful </span>
+    <section class="px-5 md:px-12 mt-7 md:mt-20 md:flex md:justify-between md:items-center">
+      <div
+        class="w-full md:w-[500px] h-[320px] md:h-[380px] md:absolute md:right-7 bg-cover bg-center md:order-2 md:-z-10"
+        style="background-image: url(../asset/1.svg);"></div>
+      <div class="w-11/12 md:w-5/12 md:order-1">
+        <h1 class="text-3xl md:text-3xl mb-4 font-semibold">Make your business <span class="text-oren"> more powerful
+          </span>
           with us</h1>
-        <p class="text-base mb-7">We provide various services to make your business grow and get bigger. Your
+        <p class="text-base md:text-sm mb-7">We provide various services to make your business grow and get bigger. Your
           satisfaction is our first
           priority.
         </p>
@@ -101,213 +105,267 @@
       </div>
     </section>
 
-    <section class="px-5 mt-14 flex flex-col items-center">
-      <h3 class="text-lg mb-3 text-oren">Our Services</h3>
-      <h1 class="text-center text-xl font-bold mb-10">The various services we provide to make your business more
+    <section class="px-5 md:px-12 mt-14 md:mt-40 flex flex-col items-center">
+      <h3 class="text-lg md:font-semibold mb-3 text-oren">Our Services</h3>
+      <h1 class="text-center md:w-7/12 text-xl font-bold mb-10">The various services we provide to make your business
+        more
         powerful</h1>
-      <div>
-        <div class="flex flex-col items-center gap-y-4 bg-ungu py-14 px-5 rounded-lg text-white mb-8">
+
+      <div class="md:flex md:justify-between md:flex-wrap md:gap-y-5">
+        <div class="md:w-32persen flex flex-col items-center gap-y-4 bg-ungu py-14 px-5 rounded-lg text-white mb-8">
           <i class="fa fa-wallet text-6xl" aria-hidden="true"></i>
-          <h1 class="text-xl">Ideate</h1>
-          <p class="text-center text-lg">We help you develop creative ideas so that your business can grow more rapidly
+          <h1 class="text-xl md:font-semibold">Ideate</h1>
+          <p class="text-center text-lg md:text-sm">We help you develop creative ideas so that your business can grow
+            more rapidly
           </p>
           <div><i class="fa fa-arrow-right p-3 bg-white rounded-full text-ungu" aria-hidden="true"></i></div>
         </div>
 
-        <div class="flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
+        <div
+          class="md:w-32persen flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
           <i class="fa fa-pen text-6xl" aria-hidden="true"></i>
-          <h1 class="text-xl">Design</h1>
-          <p class="text-center text-lg">We provide services with the best designs than our designer team for your
+          <h1 class="text-xl md:font-semibold">Design</h1>
+          <p class="text-center text-lg md:text-sm">We provide services with the best designs than our designer team for
+            your
             business</p>
           <div><i class="fa fa-arrow-right p-3 bg-slate-200 rounded-full text-slate-900" aria-hidden="true"></i></div>
         </div>
 
-        <div class="flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
+        <div
+          class="md:w-32persen flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
           <i class="fa fa-desktop text-6xl" aria-hidden="true"></i>
-          <h1 class="text-xl">Web Development</h1>
-          <p class="text-center text-lg">We help develop company websites to be more professional and attractive</p>
+          <h1 class="text-xl md:font-semibold">Web Development</h1>
+          <p class="text-center text-lg md:text-sm">We help develop company websites to be more professional and
+            attractive</p>
           <div><i class="fa fa-arrow-right p-3 bg-slate-200 rounded-full text-slate-900" aria-hidden="true"></i></div>
         </div>
 
-        <div class="flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
+        <div
+          class="md:w-32persen flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
           <i class="fa fa-mobile text-6xl" aria-hidden="true"></i>
-          <h1 class="text-xl">App Development</h1>
-          <p class="text-center text-lg">We help develop company mobile apps to be more professional and attractive</p>
+          <h1 class="text-xl md:font-semibold">App Development</h1>
+          <p class="text-center text-lg md:text-sm">We help develop company mobile apps to be more professional and
+            attractive</p>
           <div><i class="fa fa-arrow-right p-3  bg-slate-200 rounded-full text-slate-900" aria-hidden="true"></i></div>
         </div>
 
-        <div class="flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
+        <div
+          class="md:w-32persen flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
           <i class="fa fa-bucket text-6xl" aria-hidden="true"></i>
-          <h1 class="text-xl">Bussiness Growth</h1>
-          <p class="text-center text-lg">We also provide services by providing input for your business growth</p>
+          <h1 class="text-xl md:font-semibold">Bussiness Growth</h1>
+          <p class="text-center text-lg md:text-sm">We also provide services by providing input for your business growth
+          </p>
           <div><i class="fa fa-arrow-right p-3 bg-slate-200 rounded-full text-slate-900" aria-hidden="true"></i></div>
         </div>
 
-        <div class="flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
+        <div
+          class="md:w-32persen flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
           <i class="fa fa-table text-6xl" aria-hidden="true"></i>
-          <h1 class="text-xl">Digital Marketing</h1>
-          <p class="text-center text-lg">We provide services with the best designs than our designer team for your We
-            also help you market your products through an online marketplace</p>
+          <h1 class="text-xl md:font-semibold">Digital Marketing</h1>
+          <p class="text-center text-lg md:text-sm">We also help you market your products through an online marketplace
+          </p>
           <div><i class="fa fa-arrow-right p-3 bg-slate-200 rounded-full text-slate-900" aria-hidden="true"></i></div>
         </div>
 
       </div>
     </section>
 
-    <section class=" mt-20 flex flex-col items-center">
-      <h3 class="text-lg text-center text-oren mb-4">Our Documentation</h3>
-      <h1 class=" w-11/12 text-xl text-center font-bold">See what our profile is like and how we work for your
+    <section class="mt-20 flex flex-col items-center">
+      <h3 class="text-lg text-center text-oren md:font-semibold mb-4">Our Documentation</h3>
+      <h1 class=" w-11/12 md:w-7/12 text-xl text-center font-bold">See what our profile is like and how we work for your
         business</h1>
-      <div class="w-full h-96 overflow-hidden mt-10">
-        <div class="w-[450px] h-[450px] bg-oren rounded-full  -left-64 relative"></div>
-        <div class="w-[500px] h-[500px] bg-abang rounded-full -right-14 -top-96 relative"></div>
+      <div class="w-full h-96 md:h-[500px] overflow-hidden mt-10">
+        <div class="w-[450px] md:w-[650px] h-[450px] md:h-[650px] bg-oren rounded-full  -left-64 md:-left-20 relative">
+        </div>
+        <div
+          class="w-[500px] md:w-[650px] h-[500px] md:h-[650px] bg-abang rounded-full -right-14 md:-right-96 -top-96 md:-top-[570px] relative">
+        </div>
       </div>
-      <div class=" w-11/12 h-52 bg-cover bg-center mx-auto -top-72 rounded-lg z-10 relative grid place-items-center"
+
+      <div
+        class=" w-11/12 md:w-10/12 h-52 md:h-96 bg-cover bg-center mx-auto -top-72 md:-top-[500px] rounded-lg z-10 relative grid place-items-center"
         style="background-image: url(../asset/2.svg);">
         <i class="fa fa-play text-2xl px-5 py-3 rounded-full text-slate-200 bg-white" aria-hidden="true"></i>
       </div>
-      <div class="w-11/12 flex flex-col -mt-20 gap-y-10">
-        <div class="w-full flex flex-col items-center bg-white text-ungu rounded-lg shadow-lg py-28 gap-y-5">
-          <h1 class="text-7xl font-bold">70K+</h1>
-          <p class=" text-xl font-semibold w-10/12 text-center">We have more than customers</p>
+
+      <div class="md:flex md:justify-between md:px-12 md:-mt-72">
+        <div
+          class="w-11/12 md:w-6/12 flex flex-col md:flex-row md:justify-between md:flex-wrap -mt-20 md:-mt-0 gap-y-10 md:gap-y-5">
+
+          <div
+            class="w-full md:w-48persen flex flex-col items-center bg-white text-ungu rounded-lg shadow-lg py-28 md:py-8 gap-y-5 md:gap-y-3">
+            <h1 class="text-7xl md:text-2xl font-bold">70K+</h1>
+            <p class=" text-xl md:text-base font-semibold w-10/12 text-center">We have more than customers</p>
+          </div>
+
+          <div
+            class="w-full md:w-48persen flex flex-col items-center bg-white text-oren rounded-lg shadow-lg py-28 md:py-8 gap-y-5 md:gap-y-3">
+            <h1 class="text-7xl md:text-2xl font-bold">100+</h1>
+            <p class=" text-x md:text-basel font-semibold w-10/12 text-center">Projects we have completed</p>
+          </div>
+
+          <div
+            class="w-full md:w-48persen flex flex-col items-center bg-white text-abang rounded-lg shadow-lg py-28 md:py-8 gap-y-5 md:gap-y-3">
+            <h1 class=" text-7xl md:text-2xl font-bold">10M+</h1>
+            <p class=" text-xl md:text-base font-semibold w-10/12 text-center">People who are helped because of our hard
+              work</p>
+          </div>
+
+          <div
+            class="w-full md:w-48persen flex flex-col items-center bg-white text-ijo rounded-lg shadow-lg py-28 md:py-8 gap-y-5 md:gap-y-3">
+            <h1 class=" text-7xl md:text-2xl font-bold">200+</h1>
+            <p class=" text-xl md:text-base font-semibold w-10/12 text-center">Support from world-renowned companies</p>
+          </div>
+
         </div>
 
-        <div class="w-full flex flex-col items-center bg-white text-oren rounded-lg shadow-lg py-28 gap-y-5">
-          <h1 class="text-7xl font-bold">100+</h1>
-          <p class=" text-xl font-semibold w-10/12 text-center">Projects we have completed</p>
-        </div>
+        <div class="px-5 md:px-0 md:pl-7 mt-20 md:mt-0 md:w-6/12">
+          <h1 class="text-2xl md:text-4xl font-semibold mb-5">Customer satisfaction is our first priority</h1>
+          <p class="text-lg md:text-sm mb-5">We serve many customers, ranging from small businesses, medium
+            entrepreneurs, to
+            world-renowned companies. Their
+            satisfaction is our pleasure. We strive to provide the best service by:</p>
 
-        <div class="w-full flex flex-col items-center bg-white text-abang rounded-lg shadow-lg py-28 gap-y-5">
-          <h1 class="text-7xl font-bold">10M+</h1>
-          <p class=" text-xl font-semibold w-10/12 text-center">People who are helped because of our hard work</p>
-        </div>
-
-        <div class="w-full flex flex-col items-center bg-white text-ijo rounded-lg shadow-lg py-28 gap-y-5">
-          <h1 class="text-7xl font-bold">200+</h1>
-          <p class=" text-xl font-semibold w-10/12 text-center">Support from world-renowned companies</p>
-        </div>
-
-      </div>
-
-      <div class="px-5 mt-20">
-        <h1 class="text-2xl font-semibold mb-5">Customer satisfaction is our first priority</h1>
-        <p class="text-lg mb-5">We serve many customers, ranging from small businesses, medium entrepreneurs, to
-          world-renowned companies. Their
-          satisfaction is our pleasure. We strive to provide the best service by:</p>
-        <div class="flex flex-col gap-y-3">
-          <p><i class="fa fa-check mr-3 px-2 rounded-full text-white py-2 bg-ungu" aria-hidden="true"></i>Provide idea
-            support from our creative team</p>
-          <p><i class="fa fa-check mr-3 px-2 rounded-full text-white py-2 bg-ungu" aria-hidden="true"></i>Provide
-            attractive and professional design services</p>
-          <p><i class="fa fa-check mr-3 px-2 rounded-full text-white py-2 bg-ungu" aria-hidden="true"></i>Support for
-            service 24 hours a week</p>
-          <p><i class="fa fa-check mr-3 px-2 rounded-full text-white py-2 bg-ungu" aria-hidden="true"></i>Helping our
-            customers to grow their business</p>
-          <p><i class="fa fa-check mr-3 px-2 rounded-full text-white py-2 bg-ungu" aria-hidden="true"></i>Provide
-            support to market products through online marketplace</p>
+          <div class="flex flex-col gap-y-3 md:gap-y-1 md:text-sm">
+            <p><i class="fa fa-check mr-3 px-2 md:px-0 rounded-full text-white py-2 md:py-0 bg-ungu"
+                aria-hidden="true"></i>Provide idea
+              support from our creative team</p>
+            <p><i class="fa fa-check mr-3 px-2 md:px-0 rounded-full text-white py-2 md:py-0 bg-ungu"
+                aria-hidden="true"></i>Provide
+              attractive and professional design services</p>
+            <p><i class="fa fa-check mr-3 px-2 md:px-0 rounded-full text-white py-2 md:py-0 bg-ungu"
+                aria-hidden="true"></i>Support for
+              service 24 hours a week</p>
+            <p><i class="fa fa-check mr-3 px-2 md:px-0 rounded-full text-white py-2 md:py-0 bg-ungu"
+                aria-hidden="true"></i>Helping our
+              customers to grow their business</p>
+            <p><i class="fa fa-check mr-3 px-2 md:px-0 rounded-full text-white py-2 md:py-0 bg-ungu"
+                aria-hidden="true"></i>Provide
+              support to market products through online marketplace</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="px-5 mt-20 flex flex-col">
+    <section class="px-5 md:px-12 mt-20 md:mt-28 flex flex-col">
       <h3 class="text-lg text-abang self-center mb-4">Working Space</h3>
-      <h1 class="text-xl text-center mb-10 font-bold">Let’s meet our interior room decoration</h1>
-      <div>
-        <div class="w-full h-[420px] bg-cover bg-center p-4 mb-10 shadow-lg flex flex-col justify-end"
+      <h1 class="text-xl md:text-2xl text-center mb-10 font-bold">Let’s meet our interior room decoration</h1>
+
+      <div class="md:flex md:flex-wrap md:justify-between md:h-[700px]">
+        <div
+          class="w-full md:w-32persen h-[420px] md:h-80 bg-cover bg-center p-4 mb-10 md:mb-0 shadow-lg flex flex-col justify-end"
           style="background-image: url(../asset/3.svg);">
           <p class="text-lg text-white">Single working space</p>
         </div>
-        <div class="w-full h-[420px] bg-cover bg-center p-4 mb-10 shadow-lg flex flex-col justify-end"
+
+        <div
+          class="w-full md:w-32persen h-[420px] md:h-80 bg-cover bg-center p-4 mb-10 md:mb-0 shadow-lg flex flex-col justify-end"
           style="background-image: url(../asset/4.svg);">
           <p class="text-lg text-white">Front working space</p>
         </div>
-        <div class="w-full h-[420px] bg-cover bg-center p-4 mb-10 shadow-lg flex flex-col justify-end"
+
+        <div
+          class="w-full md:w-32persen h-[420px] md:h-80 bg-cover bg-center p-4 mb-10 md:mb-0 shadow-lg flex flex-col justify-end"
           style="background-image: url(../asset/5.svg);">
           <p class="text-lg text-white">Kitchen room</p>
         </div>
-        <div class="w-full h-[420px] bg-cover bg-center p-4 mb-10 shadow-lg flex flex-col justify-end"
+
+        <div
+          class="w-full md:w-32persen h-[420px] md:h-80 bg-cover bg-center p-4 mb-10 md:mb-0 shadow-lg flex flex-col justify-end"
           style="background-image: url(../asset/6.svg);">
           <p class="text-lg text-white">Guest rest room</p>
         </div>
-        <div class="w-full h-[420px] bg-cover bg-center p-4 mb-10 shadow-lg flex flex-col justify-end"
+
+        <div
+          class="w-full md:w-32persen h-[420px] md:h-80 bg-cover bg-center p-4 mb-10 md:mb-0 shadow-lg flex flex-col justify-end"
           style="background-image: url(../asset/7.svg);">
           <p class="text-lg text-white">Guest meeting room</p>
         </div>
-        <div class="w-full h-[420px] bg-cover bg-center p-4 mb-10 shadow-lg flex flex-col justify-end"
+
+        <div
+          class="w-full md:w-32persen h-[420px] md:h-80 bg-cover bg-center p-4 mb-10 md:mb-0 shadow-lg flex flex-col justify-end"
           style="background-image: url(../asset/8.svg);">
           <p class="text-lg text-white">Meeting corner</p>
         </div>
       </div>
     </section>
 
-    <section class="px-5 mt-20 flex flex-col items-center">
+    <section class="px-5 md:px-12 mt-20 flex flex-col items-center">
       <h3 class="text-lg text-abang mb-4">Some of Our Great Customers</h3>
-      <h1 class="text-xl font-bold mb-10 text-center">Some of the companies we have worked with</h1>
-      <div class="flex flex-col items-center justify-between gap-y-10">
-        <img src="../asset/9.svg" class="w-90persen" alt="">
-        <img src="../asset/10.svg" class="w-90persen" alt="">
-        <img src="../asset/11.svg" class="w-90persen" alt="">
-        <img src="../asset/12.svg" class="w-90persen" alt="">
-        <img src="../asset/13.svg" class="w-90persen" alt="">
-        <img src="../asset/14.svg" class="w-90persen" alt="">
-        <img src="../asset/15.svg" class="w-90persen" alt="">
-        <img src="../asset/16.svg" class="w-80persen" alt="">
-        <img src="../asset/17.svg" class="w-90persen" alt="">
-        <img src="../asset/18.svg" class="w-90persen" alt="">
+      <h1 class="text-xl md:text-2xl font-bold mb-10 text-center">Some of the companies we have worked with</h1>
+      <div class="md:w-11/12 flex flex-col md:flex-row md:flex-wrap items-center justify-between gap-y-10">
+        <img src="../asset/9.svg" class="w-90persen md:w-18persen" alt="">
+        <img src="../asset/10.svg" class="w-90persen md:w-18persen" alt="">
+        <img src="../asset/11.svg" class="w-90persen md:w-18persen" alt="">
+        <img src="../asset/12.svg" class="w-90persen md:w-18persen" alt="">
+        <img src="../asset/13.svg" class="w-90persen md:w-18persen" alt="">
+        <img src="../asset/14.svg" class="w-90persen md:w-18persen" alt="">
+        <img src="../asset/15.svg" class="w-90persen md:w-18persen" alt="">
+        <img src="../asset/16.svg" class="w-80persen md:w-18persen" alt="">
+        <img src="../asset/17.svg" class="w-90persen md:w-18persen" alt="">
+        <img src="../asset/18.svg" class="w-90persen md:w-18persen" alt="">
       </div>
     </section>
 
-    <section class="px-10 py-24 bg-oren mt-20 text-white flex flex-col items-center">
+    <section class="px-10 md:px-12 py-24 md:py-16 bg-oren mt-20 text-white flex flex-col items-center">
       <div class="flex gap-x-3 mb-14">
         <div class="w-5 h-5 bg-white rounded-full"></div>
         <div class="w-5 h-5 bg-white rounded-full"></div>
         <div class="w-5 h-5 bg-white rounded-full"></div>
       </div>
-      <p class="text-xl w-9/12 text-center leading-9 mb-10">"We are serious about providing our best service to all the
+      <p class="text-xl md:text-lg w-9/12 text-center leading-9 mb-10">"We are serious about providing our best service
+        to all the
         customers we
         help. Customers satisfaction is our number one
         priority."</p>
-      <h3 class="text-center text-xl font-semibold">Mark Garfield <br> CEO & Head of Product</h3>
+      <h3 class="text-center text-xl md:text-lg font-semibold">Mark Garfield <br> CEO & Head of Product</h3>
     </section>
 
-    <section class="px-5 mt-20 flex flex-col items-center">
+    <section class="px-5 md:px-12 mt-20 flex flex-col items-center">
       <h3 class="text-lg text-abang mb-4">Frequently Ask Question</h3>
-      <h1 class="text-xl font-semibold text-center mb-10">Some of our frequently asked questions</h1>
+      <h1 class="text-xl md:text-xl font-semibold text-center mb-10">Some of our frequently asked questions</h1>
       <div class="flex flex-col items-center gap-y-4">
-        <div class="w-full py-8 px-4 bg-white shadow-lg flex justify-between items-center">
+        <div class="w-full md:w-10/12 py-8 px-4 bg-white shadow-lg flex justify-between items-center">
           <p class="w-10/12">What are the services provided to customers?</p>
           <i class="fa-solid fa-chevron-down"></i>
         </div>
-        <div class="w-full py-8 px-4 bg-white shadow-lg flex justify-between items-center">
+
+        <div class="w-full md:w-10/12 py-8 px-4 bg-white shadow-lg flex justify-between items-center">
           <p class="w-11/12">How can I submit a proposal for cooperation?</p>
           <i class="fa-solid fa-chevron-down"></i>
         </div>
-        <div class="w-full py-8 px-4 bg-white shadow-lg flex justify-between items-center">
+
+        <div class="w-full md:w-10/12 py-8 px-4 bg-white shadow-lg flex justify-between items-center">
           <p class="w-11/12">I come from a faraway place, can collaboration be done full time online through several
             meeting applications?</p>
           <i class="fa-solid fa-chevron-down"></i>
         </div>
-        <div class="w-full py-8 px-4 bg-white shadow-lg flex justify-between items-center">
+
+        <div class="w-full md:w-10/12 py-8 px-4 bg-white shadow-lg flex justify-between items-center">
           <p class="w-11/12">How do I get the payment complete?</p>
           <i class="fa-solid fa-chevron-down"></i>
         </div>
-        <div class="w-full py-8 px-4 bg-white shadow-lg flex justify-between items-center">
+
+        <div class="w-full md:w-10/12 py-8 px-4 bg-white shadow-lg flex justify-between items-center">
           <p class="w-11/12">How long can the collaboration last?</p>
           <i class="fa-solid fa-chevron-down"></i>
         </div>
+
       </div>
     </section>
 
-    <section class="px-5 mt-20 flex flex-col items-center">
+    <section class="px-5 md:px-12 mt-20 flex flex-col items-center">
       <h3 class="text-lg text-abang mb-4">Testimonials</h3>
       <h1 class="text-xl font-semibold mb-10 text-center">Some testimonials from our customers</h1>
-      <div class="flex flex-col items-center gap-y-10">
-        <div class="flex flex-col items-center py-14 shadow-lg">
-          <div class="w-28 h-28 bg-center bg-cover rounded-full mb-8"
+
+      <div class="flex flex-col md:flex-row md:flex-wrap items-center gap-y-10">
+        <div class="md:w-32persen flex flex-col items-center py-14 md:py-5 shadow-lg">
+          <div class="w-28 md:w-20 h-28 md:h-20 bg-center bg-cover rounded-full mb-8"
             style="background-image:url(../asset/people/1.jpg);"></div>
           <h1 class="text-lg font-semibold">Hengki Anggia</h1>
-          <p class="mb-8">Google INC</p>
-          <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, eveniet.</p>
+          <p class="mb-8 md:mb-4 md:text-sm">Google INC</p>
+          <p class="text-center text-lg md:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
+            eveniet.</p>
           <div class="mt-5 text-ungu">
             <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -317,13 +375,14 @@
           </div>
         </div>
 
-        <div class="flex flex-col items-center py-14 shadow-lg">
-          <div class="w-28 h-28 bg-center bg-cover rounded-full mb-8"
-            style="background-image:url(../asset/people/1.jpg);">
-          </div>
+        <div class="md:w-32persen flex flex-col items-center py-14 md:py-5 shadow-lg">
+          <div class="w-28 md:w-20 h-28 md:h-20 bg-center bg-cover rounded-full mb-8"
+            style="background-image:url(../asset/people/1.jpg);"></div>
           <h1 class="text-lg font-semibold">Hengki Anggia</h1>
-          <p class="mb-8">Google INC</p>
-          <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, eveniet.</p>
+          <p class="mb-8 md:mb-4 md:text-sm">Google INC</p>
+          <p class="text-center text-lg md:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
+            eveniet.
+          </p>
           <div class="mt-5 text-ungu">
             <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -333,13 +392,14 @@
           </div>
         </div>
 
-        <div class="flex flex-col items-center py-14 shadow-lg">
-          <div class="w-28 h-28 bg-center bg-cover rounded-full mb-8"
-            style="background-image:url(../asset/people/1.jpg);">
-          </div>
+        <div class="md:w-32persen flex flex-col items-center py-14 md:py-5 shadow-lg">
+          <div class="w-28 md:w-20 h-28 md:h-20 bg-center bg-cover rounded-full mb-8"
+            style="background-image:url(../asset/people/1.jpg);"></div>
           <h1 class="text-lg font-semibold">Hengki Anggia</h1>
-          <p class="mb-8">Google INC</p>
-          <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, eveniet.</p>
+          <p class="mb-8 md:mb-4 md:text-sm">Google INC</p>
+          <p class="text-center text-lg md:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
+            eveniet.
+          </p>
           <div class="mt-5 text-ungu">
             <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -349,13 +409,14 @@
           </div>
         </div>
 
-        <div class="flex flex-col items-center py-14 shadow-lg">
-          <div class="w-28 h-28 bg-center bg-cover rounded-full mb-8"
-            style="background-image:url(../asset/people/1.jpg);">
-          </div>
+        <div class="md:w-32persen flex flex-col items-center py-14 md:py-5 shadow-lg">
+          <div class="w-28 md:w-20 h-28 md:h-20 bg-center bg-cover rounded-full mb-8"
+            style="background-image:url(../asset/people/1.jpg);"></div>
           <h1 class="text-lg font-semibold">Hengki Anggia</h1>
-          <p class="mb-8">Google INC</p>
-          <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, eveniet.</p>
+          <p class="mb-8 md:mb-4 md:text-sm">Google INC</p>
+          <p class="text-center text-lg md:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
+            eveniet.
+          </p>
           <div class="mt-5 text-ungu">
             <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -365,13 +426,14 @@
           </div>
         </div>
 
-        <div class="flex flex-col items-center py-14 shadow-lg">
-          <div class="w-28 h-28 bg-center bg-cover rounded-full mb-8"
-            style="background-image:url(../asset/people/1.jpg);">
-          </div>
+        <div class="md:w-32persen flex flex-col items-center py-14 md:py-5 shadow-lg">
+          <div class="w-28 md:w-20 h-28 md:h-20 bg-center bg-cover rounded-full mb-8"
+            style="background-image:url(../asset/people/1.jpg);"></div>
           <h1 class="text-lg font-semibold">Hengki Anggia</h1>
-          <p class="mb-8">Google INC</p>
-          <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, eveniet.</p>
+          <p class="mb-8 md:mb-4 md:text-sm">Google INC</p>
+          <p class="text-center text-lg md:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
+            eveniet.
+          </p>
           <div class="mt-5 text-ungu">
             <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -381,13 +443,14 @@
           </div>
         </div>
 
-        <div class="flex flex-col items-center py-14 shadow-lg">
-          <div class="w-28 h-28 bg-center bg-cover rounded-full mb-8"
-            style="background-image:url(../asset/people/1.jpg);">
-          </div>
+        <div class="md:w-32persen flex flex-col items-center py-14 md:py-5 shadow-lg">
+          <div class="w-28 md:w-20 h-28 md:h-20 bg-center bg-cover rounded-full mb-8"
+            style="background-image:url(../asset/people/1.jpg);"></div>
           <h1 class="text-lg font-semibold">Hengki Anggia</h1>
-          <p class="mb-8">Google INC</p>
-          <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, eveniet.</p>
+          <p class="mb-8 md:mb-4 md:text-sm">Google INC</p>
+          <p class="text-center text-lg md:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque,
+            eveniet.
+          </p>
           <div class="mt-5 text-ungu">
             <i class="fa fa-star" aria-hidden="true"></i>
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -399,51 +462,56 @@
       </div>
     </section>
 
-    <section class="mx-5 rounded-lg mt-20 flex flex-col items-center bg-kuning py-20 text-white">
+    <section class="mx-5 md:mx-12 rounded-lg mt-20 flex flex-col items-center bg-kuning py-20 md:py-10 text-white">
       <h3 class="text-lg mb-4">Are You Ready For</h3>
-      <h1 class="text-5xl font-semibold text-center mb-10">Start a New Project</h1>
+      <h1 class="text-5xl font-semibold text-center mb-10 md:mb-5">Start a New Project</h1>
       <a href="#" class="px-4 py-2 bg-ungu rounded-lg">Start Now <i class="fa fa-arrow-right"
           aria-hidden="true"></i></a>
     </section>
 
-    <section class="mx-5 rounded-lg mt-20 flex flex-col items-center bg-ungu py-20 text-white">
+    <section class="mx-5 md:mx-12 rounded-lg mt-20 flex flex-col items-center bg-ungu py-20 md:py10 text-white">
       <h3 class="text-lg mb-4">Get Notified About Project</h3>
-      <h1 class="text-5xl font-semibold text-center mb-10">Subscribe Now</h1>
-      <input type="text" class="px-3 py-3 w-11/12 rounded-sm" placeholder="Masukkan email">
+      <h1 class="text-5xl font-semibold text-center mb-10 md:mb-5">Subscribe Now</h1>
+      <input type="text" class="px-3 py-3 w-11/12 md:w-8/12 rounded-sm" placeholder="Masukkan email">
     </section>
 
-    <footer class="flex flex-col bg-primary pt-64 px-5 text-white relative -top-52 -z-10 pb-10">
-      <h1 class="text-lg h-14 w-14 grid place-items-center text-white rounded-lg bg-ungu font-bold mb-4">PKY</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <footer class="flex flex-col bg-primary pt-64 px-5 md:px-12 text-white relative -mt-52 md:-mt-44 -z-10 pb-10">
+      <div class="md:flex md:justify-between ">
+        <div class="md:w-25persen">
+          <h1 class="text-lg h-14 w-14 grid place-items-center text-white rounded-lg bg-ungu font-bold mb-4">PKY</h1>
+          <p class="md:text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
 
-      <div class="mt-10">
-        <h1 class="mb-5 text-xl">Our Office</h1>
-        <div class="w-full h-56 bg-cover bg-center" style="background-image: url(../asset/peta.svg);"></div>
-      </div>
+        <div class="mt-10 md:mt-0 md:w-45persen">
+          <h1 class="mb-5 text-xl">Our Office</h1>
+          <div class="w-full h-56 bg-cover bg-center" style="background-image: url(../asset/peta.svg);"></div>
+        </div>
 
-      <div class="mt-10 flex flex-col gap-y-3 w-10/12">
-        <h1 class="mb-1 text-xl">Contact</h1>
-        <p>Jl KH Samanhudi Metro Atom Plaza Bl AKS 1/11, Dki Jakarta</p>
-        <p>info@yourdomain.com</p>
-        <p>+62 (0) 000 0000 00</p>
+        <div class="md:w-25persen mt-10 md:mt-0 flex flex-col gap-y-3 w-10/12">
+          <h1 class="mb-1 text-xl">Contact</h1>
+          <p>Jl KH Samanhudi Metro Atom Plaza Bl AKS 1/11, Dki Jakarta</p>
+          <p>info@yourdomain.com</p>
+          <p>+62 (0) 000 0000 00</p>
+        </div>
       </div>
 
       <hr class="my-8">
 
-      <div class="flex flex-col items-center gap-y-5">
-        <p>© 2021 Creative Agency</p>
-        <div class="w-11/12 flex justify-between">
+      <div class="flex flex-col md:flex-row md:justify-between items-center gap-y-5">
+        <p class="text-sm">© 2021 Creative Agency</p>
+        <div class="w-11/12 md:w-35persen md:text-sm flex justify-between">
           <a href="#">Home</a>
           <a href="#">Works</a>
           <a href="#">About</a>
           <a href="#">Pricing</a>
           <a href="#">More</a>
         </div>
-        <div class="w-7/12 flex justify-between text-2xl">
+        <div class="w-7/12 flex md:w-25persen justify-between text-2xl md:text-lg">
           <a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
           <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
           <a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
