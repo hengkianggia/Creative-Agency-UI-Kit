@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.p0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="gaya.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#00113B",
+            "ungu": "#4C40F7",
+            "oren": "#FF6800",
+            "abang": "#FF2D59",
+            "ijo": "#4ADB61",
+            "kuning": "#FFCC00",
+          },
+          spacing: {
+            "5persen": "5%",
+            "10persen": "10%",
+            "15persen": "15%",
+            "20persen": "20%",
+            "25persen": "25%",
+            "30persen": "30%",
+            "32persen": "32%",
+            "35persen": "35%",
+            "40persen": "40%",
+            "45persen": "45%",
+            "48persen": "48%",
+            "49persen": "49%",
+            "50persen": "50%",
+            "55persen": "55%",
+            "60persen": "60%",
+            "65persen": "65%",
+            "70persen": "70%",
+            "75persen": "75%",
+            "80persen": "80%",
+            "85persen": "85%",
+            "90persen": "90%",
+            "95persen": "95%",
+            "100persen": "100%",
+          },
+          fontFamily: {
+            poppins: ["'Poppins'", "sans-serif"],
+          },
+          letterSpacing: {
+            big: "1em",
+          },
+          lineHeight: {
+            gede: '5rem',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body class="font-poppins">
+  <div class="w-screen h-screen max-w-[2500px] mx-auto">
+
+    <nav class="w-full h-14 flex justify-between items-center px-4 mt-5">
+      <h1 class="text-lg p-2 text-white rounded-lg bg-ungu font-bold">PKY</h1>
+      <div id="menu"
+        class="flex flex-col absolute w-screen h-screen bg-white justify-center items-center gap-y-4 text-2xl font-semibold -top-[7000px] z-10">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Work</a>
+        <a href="#" class="px-3 py-2 rounded-lg bg-primary text-white">Contact Us</a>
+      </div>
+      <div id="burger" class="w-9 h-7 flex flex-col justify-between z-20">
+        <span class="w-full h-[5px] bg-black rounded-sm"></span>
+        <span class="w-10/12  h-[5px] bg-black rounded-sm"></span>
+        <span class="w-full h-[5px] bg-black rounded-sm"></span>
+      </div>
+    </nav>
+
+    <section class="px-5 mt-7">
+      <div class="w-full h-[320px] bg-cover bg-center" style="background-image: url(../asset/1.svg);"></div>
+      <div class="w-11/12">
+        <h1 class="text-3xl mb-4 font-semibold">Make your business <span class="text-oren"> more powerful </span>
+          with us</h1>
+        <p class="text-base mb-7">We provide various services to make your business grow and get bigger. Your
+          satisfaction is our first
+          priority.
+        </p>
+        <a href="#" class="px-4 py-2 bg-ungu text-white rounded-md">Get Started <i
+            class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <section class="px-5 mt-14 flex flex-col items-center">
+      <h3 class="text-lg mb-3 text-oren">Our Services</h3>
+      <h1 class="text-center text-xl font-bold mb-10">The various services we provide to make your business more
+        powerful</h1>
+      <div>
+        <div class="flex flex-col items-center gap-y-4 bg-ungu py-14 px-5 rounded-lg text-white mb-8">
+          <i class="fa fa-wallet text-6xl" aria-hidden="true"></i>
+          <h1 class="text-xl">Ideate</h1>
+          <p class="text-center text-lg">We help you develop creative ideas so that your business can grow more rapidly
+          </p>
+          <div><i class="fa fa-arrow-right p-3 bg-white rounded-full text-ungu" aria-hidden="true"></i></div>
+        </div>
+
+        <div class="flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
+          <i class="fa fa-pen text-6xl" aria-hidden="true"></i>
+          <h1 class="text-xl">Design</h1>
+          <p class="text-center text-lg">We provide services with the best designs than our designer team for your
+            business</p>
+          <div><i class="fa fa-arrow-right p-3 bg-slate-200 rounded-full text-slate-900" aria-hidden="true"></i></div>
+        </div>
+
+        <div class="flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
+          <i class="fa fa-desktop text-6xl" aria-hidden="true"></i>
+          <h1 class="text-xl">Web Development</h1>
+          <p class="text-center text-lg">We help develop company websites to be more professional and attractive</p>
+          <div><i class="fa fa-arrow-right p-3 bg-slate-200 rounded-full text-slate-900" aria-hidden="true"></i></div>
+        </div>
+
+        <div class="flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
+          <i class="fa fa-mobile text-6xl" aria-hidden="true"></i>
+          <h1 class="text-xl">App Development</h1>
+          <p class="text-center text-lg">We help develop company mobile apps to be more professional and attractive</p>
+          <div><i class="fa fa-arrow-right p-3  bg-slate-200 rounded-full text-slate-900" aria-hidden="true"></i></div>
+        </div>
+
+        <div class="flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
+          <i class="fa fa-bucket text-6xl" aria-hidden="true"></i>
+          <h1 class="text-xl">Bussiness Growth</h1>
+          <p class="text-center text-lg">We also provide services by providing input for your business growth</p>
+          <div><i class="fa fa-arrow-right p-3 bg-slate-200 rounded-full text-slate-900" aria-hidden="true"></i></div>
+        </div>
+
+        <div class="flex flex-col items-center gap-y-4 bg-white py-14 px-5 text-slate-900 rounded-lg mb-8 shadow-lg">
+          <i class="fa fa-table text-6xl" aria-hidden="true"></i>
+          <h1 class="text-xl">Digital Marketing</h1>
+          <p class="text-center text-lg">We provide services with the best designs than our designer team for your We
+            also help you market your products through an online marketplace</p>
+          <div><i class="fa fa-arrow-right p-3 bg-slate-200 rounded-full text-slate-900" aria-hidden="true"></i></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class=" mt-20 flex flex-col items-center">
+      <h3 class="text-lg text-center text-oren mb-4">Our Documentation</h3>
+      <h1 class=" w-11/12 text-xl text-center font-bold">See what our profile is like and how we work for your
+        business</h1>
+      <div class="w-full h-96 overflow-hidden mt-10">
+        <div class="w-[450px] h-[450px] bg-oren rounded-full  -left-64 relative"></div>
+        <div class="w-[500px] h-[500px] bg-abang rounded-full -right-14 -top-96 relative"></div>
+      </div>
+      <div class=" w-11/12 h-52 bg-cover bg-center mx-auto -top-72 rounded-lg z-10 relative grid place-items-center"
+        style="background-image: url(../asset/2.svg);">
+        <i class="fa fa-play text-2xl px-5 py-3 rounded-full text-slate-200 bg-white" aria-hidden="true"></i>
+      </div>
+      <div class="w-11/12 flex flex-col -mt-20 gap-y-10">
+        <div class="w-full flex flex-col items-center bg-white text-ungu rounded-lg shadow-lg py-28 gap-y-5">
+          <h1 class="text-7xl font-bold">70K+</h1>
+          <p class=" text-xl font-semibold w-10/12 text-center">We have more than customers</p>
+        </div>
+
+        <div class="w-full flex flex-col items-center bg-white text-oren rounded-lg shadow-lg py-28 gap-y-5">
+          <h1 class="text-7xl font-bold">100+</h1>
+          <p class=" text-xl font-semibold w-10/12 text-center">Projects we have completed</p>
+        </div>
+
+        <div class="w-full flex flex-col items-center bg-white text-abang rounded-lg shadow-lg py-28 gap-y-5">
+          <h1 class="text-7xl font-bold">10M+</h1>
+          <p class=" text-xl font-semibold w-10/12 text-center">People who are helped because of our hard work</p>
+        </div>
+
+        <div class="w-full flex flex-col items-center bg-white text-ijo rounded-lg shadow-lg py-28 gap-y-5">
+          <h1 class="text-7xl font-bold">200+</h1>
+          <p class=" text-xl font-semibold w-10/12 text-center">Support from world-renowned companies</p>
+        </div>
+
+      </div>
+
+      <div class="px-5 mt-20">
+        <h1 class="text-2xl font-semibold mb-5">Customer satisfaction is our first priority</h1>
+        <p class="text-lg mb-5">We serve many customers, ranging from small businesses, medium entrepreneurs, to
+          world-renowned companies. Their
+          satisfaction is our pleasure. We strive to provide the best service by:</p>
+        <div class="flex flex-col gap-y-3">
+          <p><i class="fa fa-check mr-3 px-2 rounded-full text-white py-2 bg-ungu" aria-hidden="true"></i>Provide idea
+            support from our creative team</p>
+          <p><i class="fa fa-check mr-3 px-2 rounded-full text-white py-2 bg-ungu" aria-hidden="true"></i>Provide
+            attractive and professional design services</p>
+          <p><i class="fa fa-check mr-3 px-2 rounded-full text-white py-2 bg-ungu" aria-hidden="true"></i>Support for
+            service 24 hours a week</p>
+          <p><i class="fa fa-check mr-3 px-2 rounded-full text-white py-2 bg-ungu" aria-hidden="true"></i>Helping our
+            customers to grow their business</p>
+          <p><i class="fa fa-check mr-3 px-2 rounded-full text-white py-2 bg-ungu" aria-hidden="true"></i>Provide
+            support to market products through online marketplace</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 mt-20 flex flex-col">
+      <h3 class="text-lg text-abang self-center mb-4">Working Space</h3>
+      <h1 class="text-xl text-center mb-10 font-bold">Let’s meet our interior room decoration</h1>
+      <div>
+        <div class="w-full h-[420px] bg-cover bg-center p-4 mb-10 shadow-lg flex flex-col justify-end"
+          style="background-image: url(../asset/3.svg);">
+          <p class="text-lg text-white">Single working space</p>
+        </div>
+        <div class="w-full h-[420px] bg-cover bg-center p-4 mb-10 shadow-lg flex flex-col justify-end"
+          style="background-image: url(../asset/4.svg);">
+          <p class="text-lg text-white">Front working space</p>
+        </div>
+        <div class="w-full h-[420px] bg-cover bg-center p-4 mb-10 shadow-lg flex flex-col justify-end"
+          style="background-image: url(../asset/5.svg);">
+          <p class="text-lg text-white">Kitchen room</p>
+        </div>
+        <div class="w-full h-[420px] bg-cover bg-center p-4 mb-10 shadow-lg flex flex-col justify-end"
+          style="background-image: url(../asset/6.svg);">
+          <p class="text-lg text-white">Guest rest room</p>
+        </div>
+        <div class="w-full h-[420px] bg-cover bg-center p-4 mb-10 shadow-lg flex flex-col justify-end"
+          style="background-image: url(../asset/7.svg);">
+          <p class="text-lg text-white">Guest meeting room</p>
+        </div>
+        <div class="w-full h-[420px] bg-cover bg-center p-4 mb-10 shadow-lg flex flex-col justify-end"
+          style="background-image: url(../asset/8.svg);">
+          <p class="text-lg text-white">Meeting corner</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 mt-20 flex flex-col items-center">
+      <h3 class="text-lg text-abang mb-4">Some of Our Great Customers</h3>
+      <h1 class="text-xl font-bold mb-10 text-center">Some of the companies we have worked with</h1>
+      <div class="flex flex-col items-center justify-between gap-y-10">
+        <img src="../asset/9.svg" class="w-90persen" alt="">
+        <img src="../asset/10.svg" class="w-90persen" alt="">
+        <img src="../asset/11.svg" class="w-90persen" alt="">
+        <img src="../asset/12.svg" class="w-90persen" alt="">
+        <img src="../asset/13.svg" class="w-90persen" alt="">
+        <img src="../asset/14.svg" class="w-90persen" alt="">
+        <img src="../asset/15.svg" class="w-90persen" alt="">
+        <img src="../asset/16.svg" class="w-80persen" alt="">
+        <img src="../asset/17.svg" class="w-90persen" alt="">
+        <img src="../asset/18.svg" class="w-90persen" alt="">
+      </div>
+    </section>
+
+    <section class="px-10 py-24 bg-oren mt-20 text-white flex flex-col items-center">
+      <div class="flex gap-x-3 mb-14">
+        <div class="w-5 h-5 bg-white rounded-full"></div>
+        <div class="w-5 h-5 bg-white rounded-full"></div>
+        <div class="w-5 h-5 bg-white rounded-full"></div>
+      </div>
+      <p class="text-xl w-9/12 text-center leading-9 mb-10">"We are serious about providing our best service to all the
+        customers we
+        help. Customers satisfaction is our number one
+        priority."</p>
+      <h3 class="text-center text-xl font-semibold">Mark Garfield <br> CEO & Head of Product</h3>
+    </section>
+
+    <section class="px-5 mt-20 flex flex-col items-center">
+      <h3 class="text-lg text-abang mb-4">Frequently Ask Question</h3>
+      <h1 class="text-xl font-semibold text-center mb-10">Some of our frequently asked questions</h1>
+      <div class="flex flex-col items-center gap-y-4">
+        <div class="w-full py-8 px-4 bg-white shadow-lg flex justify-between items-center">
+          <p class="w-10/12">What are the services provided to customers?</p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="w-full py-8 px-4 bg-white shadow-lg flex justify-between items-center">
+          <p class="w-11/12">How can I submit a proposal for cooperation?</p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="w-full py-8 px-4 bg-white shadow-lg flex justify-between items-center">
+          <p class="w-11/12">I come from a faraway place, can collaboration be done full time online through several
+            meeting applications?</p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="w-full py-8 px-4 bg-white shadow-lg flex justify-between items-center">
+          <p class="w-11/12">How do I get the payment complete?</p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="w-full py-8 px-4 bg-white shadow-lg flex justify-between items-center">
+          <p class="w-11/12">How long can the collaboration last?</p>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-5 mt-20 flex flex-col items-center">
+      <h3 class="text-lg text-abang mb-4">Testimonials</h3>
+      <h1 class="text-xl font-semibold mb-10 text-center">Some testimonials from our customers</h1>
+      <div class="flex flex-col items-center gap-y-10">
+        <div class="flex flex-col items-center py-14 shadow-lg">
+          <div class="w-28 h-28 bg-center bg-cover rounded-full mb-8"
+            style="background-image:url(../asset/people/1.jpg);"></div>
+          <h1 class="text-lg font-semibold">Hengki Anggia</h1>
+          <p class="mb-8">Google INC</p>
+          <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, eveniet.</p>
+          <div class="mt-5 text-ungu">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center py-14 shadow-lg">
+          <div class="w-28 h-28 bg-center bg-cover rounded-full mb-8"
+            style="background-image:url(../asset/people/1.jpg);">
+          </div>
+          <h1 class="text-lg font-semibold">Hengki Anggia</h1>
+          <p class="mb-8">Google INC</p>
+          <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, eveniet.</p>
+          <div class="mt-5 text-ungu">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center py-14 shadow-lg">
+          <div class="w-28 h-28 bg-center bg-cover rounded-full mb-8"
+            style="background-image:url(../asset/people/1.jpg);">
+          </div>
+          <h1 class="text-lg font-semibold">Hengki Anggia</h1>
+          <p class="mb-8">Google INC</p>
+          <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, eveniet.</p>
+          <div class="mt-5 text-ungu">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center py-14 shadow-lg">
+          <div class="w-28 h-28 bg-center bg-cover rounded-full mb-8"
+            style="background-image:url(../asset/people/1.jpg);">
+          </div>
+          <h1 class="text-lg font-semibold">Hengki Anggia</h1>
+          <p class="mb-8">Google INC</p>
+          <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, eveniet.</p>
+          <div class="mt-5 text-ungu">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center py-14 shadow-lg">
+          <div class="w-28 h-28 bg-center bg-cover rounded-full mb-8"
+            style="background-image:url(../asset/people/1.jpg);">
+          </div>
+          <h1 class="text-lg font-semibold">Hengki Anggia</h1>
+          <p class="mb-8">Google INC</p>
+          <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, eveniet.</p>
+          <div class="mt-5 text-ungu">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center py-14 shadow-lg">
+          <div class="w-28 h-28 bg-center bg-cover rounded-full mb-8"
+            style="background-image:url(../asset/people/1.jpg);">
+          </div>
+          <h1 class="text-lg font-semibold">Hengki Anggia</h1>
+          <p class="mb-8">Google INC</p>
+          <p class="text-center text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, eveniet.</p>
+          <div class="mt-5 text-ungu">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-5 rounded-lg mt-20 flex flex-col items-center bg-kuning py-20 text-white">
+      <h3 class="text-lg mb-4">Are You Ready For</h3>
+      <h1 class="text-5xl font-semibold text-center mb-10">Start a New Project</h1>
+      <a href="#" class="px-4 py-2 bg-ungu rounded-lg">Start Now <i class="fa fa-arrow-right"
+          aria-hidden="true"></i></a>
+    </section>
+
+    <section class="mx-5 rounded-lg mt-20 flex flex-col items-center bg-ungu py-20 text-white">
+      <h3 class="text-lg mb-4">Get Notified About Project</h3>
+      <h1 class="text-5xl font-semibold text-center mb-10">Subscribe Now</h1>
+      <input type="text" class="px-3 py-3 w-11/12 rounded-sm" placeholder="Masukkan email">
+    </section>
+
+    <footer class="flex flex-col bg-primary pt-64 px-5 text-white relative -top-52 -z-10 pb-10">
+      <h1 class="text-lg h-14 w-14 grid place-items-center text-white rounded-lg bg-ungu font-bold mb-4">PKY</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+      <div class="mt-10">
+        <h1 class="mb-5 text-xl">Our Office</h1>
+        <div class="w-full h-56 bg-cover bg-center" style="background-image: url(../asset/peta.svg);"></div>
+      </div>
+
+      <div class="mt-10 flex flex-col gap-y-3 w-10/12">
+        <h1 class="mb-1 text-xl">Contact</h1>
+        <p>Jl KH Samanhudi Metro Atom Plaza Bl AKS 1/11, Dki Jakarta</p>
+        <p>info@yourdomain.com</p>
+        <p>+62 (0) 000 0000 00</p>
+      </div>
+
+      <hr class="my-8">
+
+      <div class="flex flex-col items-center gap-y-5">
+        <p>© 2021 Creative Agency</p>
+        <div class="w-11/12 flex justify-between">
+          <a href="#">Home</a>
+          <a href="#">Works</a>
+          <a href="#">About</a>
+          <a href="#">Pricing</a>
+          <a href="#">More</a>
+        </div>
+        <div class="w-7/12 flex justify-between text-2xl">
+          <a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <script src="./gerak.js"></script>
+</body>
+
+</html>

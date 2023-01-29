@@ -1,0 +1,10 @@
+    #burger {
+      transition: all .5s ease;
+    }
+    .active {
+      top: 0px;
+    }
+
+    #menu {
+      transition: all .5s ease;
+    }
